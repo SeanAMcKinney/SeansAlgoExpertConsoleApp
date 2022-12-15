@@ -8,7 +8,6 @@ namespace SeansAlgoExpertConsoleApp
         {
             Messages.OpeningMessage();
             Menu.SelectedAlgorithem();
-            
         }
     }
 }

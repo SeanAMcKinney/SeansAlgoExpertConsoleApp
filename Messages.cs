@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿
 namespace SeansAlgoExpertConsoleApp
 {
     public static class Messages
@@ -27,7 +21,7 @@ namespace SeansAlgoExpertConsoleApp
 
         public static void HowManyNumbersMessage()
         {
-            Console.WriteLine($"How may positive integers will you be entering?");
+            Console.WriteLine($"How may coins will you be entering?");
         }
 
         public static void NonConstructableChangeInfo()
