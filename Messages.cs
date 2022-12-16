@@ -7,9 +7,10 @@ namespace SeansAlgoExpertConsoleApp
         {
             Console.WriteLine($"Welcome to Sean's Algorithem Utility!\n\n" +
                     $"Which algorithem would you like to use?\n");
+            int selection = 0;
             foreach (string option in Enum.GetNames(typeof(AlgorithemOptions)))
             {
-                Console.WriteLine(option);
+                Console.WriteLine($"Choose {selection++} for {option}.");
             }
             Console.WriteLine("\n");
         }

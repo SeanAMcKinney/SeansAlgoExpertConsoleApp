@@ -5,43 +5,43 @@ namespace SeansAlgoExpertConsoleApp
     {
         public static void SelectedAlgorithem()
         {
-            string userInput = Console.ReadLine()!.ToLower();
+            int userInput = Convert.ToInt32(Console.In.ReadLine()!);
 
             switch (userInput)
             {
-                case "binarysearch":
+                case 0:
                     Console.WriteLine($"Now going to {AlgorithemOptions.BinarySearch}.");
                     break;
-                case "branchsums":
+                case 1:
                     Console.WriteLine($"Now going to {AlgorithemOptions.BranchSums}.");
                     break;
-                case "nodedepths":
+                case 2:
                     Console.WriteLine($"Now going to {AlgorithemOptions.NodeDepths}.");
                     break;
-                case "nonconstructiblechange":
+                case 3:
                     Console.WriteLine($"Now going to {AlgorithemOptions.NonConstructibleChange}.");
-                    Thread.Sleep( 2000 );
+                    Thread.Sleep(2000);
                     Console.Clear();
                     NonConstructableChangeRoutine.RunNonConstructableChangeRoutine();
                     break;
 
-                case "productsum":
+                case 4:
                     Console.WriteLine($"Now going to {AlgorithemOptions.ProductSum}.");
                     break;
-                case "sortedsquaredarray":
+                case 5:
                     Console.WriteLine($"Now going to {AlgorithemOptions.SortedSquaredArray}.");
                     break;
-                case "tournamentwinner":
+                case 6:
                     Console.WriteLine($"Now going to {AlgorithemOptions.TrounamentWinner}.");
                     break;
-                case "twonumbersumfromarray":
+                case 7:
                     Console.WriteLine($"Now going to {AlgorithemOptions.TwoNumberSumFromArray}.");
                     Thread.Sleep(2000);
                     Console.Clear();
-                    TwoNumbersSumFromArray.RunTwoNumberSumFromArrayRoutine();
+                    TwoNumbersSumFromArrayRoutine.RunTwoNumberSumFromArrayRoutine();
                     break;
 
-                case "validatesubsequence":
+                case 8:
                     Console.WriteLine($"Now going to {AlgorithemOptions.ValidateSubsequence}.");
                     break;
                 default:

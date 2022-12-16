@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace SeansAlgoExpertConsoleApp
 {
-    public class TwoNumbersSumFromArray
+    public class TwoNumbersSumFromArrayRoutine
     {
         public static void RunTwoNumberSumFromArrayRoutine()
         {

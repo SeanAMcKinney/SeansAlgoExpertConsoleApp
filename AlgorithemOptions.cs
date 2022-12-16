@@ -10,7 +10,7 @@ namespace SeansAlgoExpertConsoleApp
         ProductSum,
         SortedSquaredArray,
         TrounamentWinner,
-        ValidateSubsequence,
         TwoNumberSumFromArray,
+        ValidateSubsequence,
     }
 }
