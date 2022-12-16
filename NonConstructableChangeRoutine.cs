@@ -7,7 +7,7 @@ namespace SeansAlgoExpertConsoleApp
         public static void RunNonConstructableChangeRoutine()
         {
             Messages.NonConstructableChangeInfo();
-            Messages.HowManyNumbersMessage();
+            Messages.HowManyCoinsNumbersMessage();
             int size = Convert.ToInt32(Console.In.ReadLine());
             int[] coins = new int[size];
             Messages.EnterYourDataMessage();

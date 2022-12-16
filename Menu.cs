@@ -24,6 +24,7 @@ namespace SeansAlgoExpertConsoleApp
                     Console.Clear();
                     NonConstructableChangeRoutine.RunNonConstructableChangeRoutine();
                     break;
+
                 case "productsum":
                     Console.WriteLine($"Now going to {AlgorithemOptions.ProductSum}.");
                     break;
@@ -33,9 +34,13 @@ namespace SeansAlgoExpertConsoleApp
                 case "tournamentwinner":
                     Console.WriteLine($"Now going to {AlgorithemOptions.TrounamentWinner}.");
                     break;
-                case "twonumbers":
-                    Console.WriteLine($"Now going to {AlgorithemOptions.TwoNumbers}.");
+                case "twonumbersumfromarray":
+                    Console.WriteLine($"Now going to {AlgorithemOptions.TwoNumberSumFromArray}.");
+                    Thread.Sleep(2000);
+                    Console.Clear();
+                    TwoNumbersSumFromArray.RunTwoNumberSumFromArrayRoutine();
                     break;
+
                 case "validatesubsequence":
                     Console.WriteLine($"Now going to {AlgorithemOptions.ValidateSubsequence}.");
                     break;
