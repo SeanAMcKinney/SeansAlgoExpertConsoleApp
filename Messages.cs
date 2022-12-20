@@ -26,7 +26,37 @@ namespace SeansAlgoExpertConsoleApp
             Console.WriteLine($"What is your target sum? \n");
         }
 
+        public static void EnterNodeId()
+        {
+            Console.WriteLine($"Enter the ID:");
+        }
+        
+        public static void EnterNodeValue()
+        {
+            Console.WriteLine($"Enter the Value:");
+        }
+
+        public static void BinaryTreeLeftValue()
+        {
+            Console.WriteLine($"Enter left value:");
+        }
+        
+        public static void BinaryTreeRightValue()
+        {
+            Console.WriteLine($"Enter right value:");
+        }
+
+        public static void EnterYourRoot()
+        {
+            Console.WriteLine($"Enter your root node by id.");
+        }
+
         //Messages asking about how many **** you need. TODO: Construct interface
+
+        public static void HowManyNodesInYourBinaryTree()
+        {
+            Console.WriteLine($"How many nodes are in your binary tree?");
+        }
 
         public static void HowManyIntsInArray()
         {
@@ -62,6 +92,24 @@ namespace SeansAlgoExpertConsoleApp
                 $"Parameter Example: new int[] {{ 1, 4, 2, 7 }}\n\n" +
                 $"When prompted, put in the number of coins you wish to add to the array.\n" +
                 $"Then add any positive integer and press enter.  Do this as many times as you chose.\n");
+        }
+
+        public static void BranchSumsInfo()
+        {
+            Console.WriteLine($"Welcome to the {AlgorithemOptions.BranchSums} algorithem.\n\n" +
+                $"The purpose of this algorithem is to take in a binary tree which houses a\n" +
+                $"list of nodes. Each node must have an id which must be unique.\n" +
+                $"Each node must have a value.\n" +
+                $"Each  node must have aleft node and a right node that are integers or null.\n" +
+                $"If a value equals a previous value it must be listed as such.\n" +
+                $"The same is true for any left or right nodes." +
+                $"Example:\n" +
+                $"id == 1, value = 1, left node = 1-2, right node = 4\n" +
+                $"id == 2, value = 1-2, left node = 1-3, right node = 4-2\n" +
+                $"id == 3, value = 1-3, left node = null, right node = null\n" +
+                $"id == 4, value = 4, left node = null, right node = null\n" +
+                $"The second instance of 1 is labled as 1-2.  The third instance as 1-3, and so on.\n" +
+                $"The same is true for the value 4. The second time it shows up it is listed as 4-2.");
         }
     }
 }

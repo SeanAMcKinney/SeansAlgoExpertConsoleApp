@@ -14,6 +14,9 @@ namespace SeansAlgoExpertConsoleApp
                     break;
                 case 1:
                     Console.WriteLine($"Now going to {AlgorithemOptions.BranchSums}.");
+                    Thread.Sleep(2000);
+                    Console.Clear();
+                    BranchSumsRoutine.RunBranchSumsRoutine();
                     break;
                 case 2:
                     Console.WriteLine($"Now going to {AlgorithemOptions.NodeDepths}.");
