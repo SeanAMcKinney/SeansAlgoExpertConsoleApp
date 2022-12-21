@@ -28,34 +28,34 @@ namespace SeansAlgoExpertConsoleApp
 
         public static void EnterNodeId()
         {
-            Console.WriteLine($"Enter the ID:");
+            Console.WriteLine($"Enter the ID:\n");
         }
         
         public static void EnterNodeValue()
         {
-            Console.WriteLine($"Enter the Value:");
+            Console.WriteLine($"Enter the Value:\n");
         }
 
         public static void BinaryTreeLeftValue()
         {
-            Console.WriteLine($"Enter left value:");
+            Console.WriteLine($"Enter left value:\n");
         }
         
         public static void BinaryTreeRightValue()
         {
-            Console.WriteLine($"Enter right value:");
+            Console.WriteLine($"Enter right value:\n");
         }
 
         public static void EnterYourRoot()
         {
-            Console.WriteLine($"Enter your root node by id.");
+            Console.WriteLine($"Enter your root node by id.\n");
         }
 
         //Messages asking about how many **** you need. TODO: Construct interface
 
         public static void HowManyNodesInYourBinaryTree()
         {
-            Console.WriteLine($"How many nodes are in your binary tree?");
+            Console.WriteLine($"How many nodes are in your binary tree?\n");
         }
 
         public static void HowManyIntsInArray()
@@ -70,6 +70,17 @@ namespace SeansAlgoExpertConsoleApp
         }
 
         //Algorithem Direction Messages:  TODO: Construct Interface for directions
+        public static void SortedSquaresInfo()
+        {
+            Console.WriteLine($"Welcome to the {AlgorithemOptions.SortedSquaredArray} algorithem.\n\n" +
+                $"The purpose of this algorithem is to take in a non-empty array of integers and\n" +
+                $"return them in a new sorted array that displays the squares of the original array.\n" +
+                $"From lowest to highest.\n" +
+                $"You will be prompted for the number of integers in your array.\n" +
+                $"Next you will enter each integer in the array one at a time.\n" +
+                $"Then the array you have entered will be returned but all values will be squared.\n");
+        }
+
 
         public static void TwoNumberSumInfo()
         {
@@ -109,7 +120,7 @@ namespace SeansAlgoExpertConsoleApp
                 $"id == 3, value = 1-3, left node = null, right node = null\n" +
                 $"id == 4, value = 4, left node = null, right node = null\n" +
                 $"The second instance of 1 is labled as 1-2.  The third instance as 1-3, and so on.\n" +
-                $"The same is true for the value 4. The second time it shows up it is listed as 4-2.");
+                $"The same is true for the value 4. The second time it shows up it is listed as 4-2.\n");
         }
     }
 }

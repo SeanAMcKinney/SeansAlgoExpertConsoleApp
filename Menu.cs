@@ -33,6 +33,9 @@ namespace SeansAlgoExpertConsoleApp
                     break;
                 case 5:
                     Console.WriteLine($"Now going to {AlgorithemOptions.SortedSquaredArray}.");
+                    Thread.Sleep(2000);
+                    Console.Clear();
+                    SortedSquaresRoutine.RunSortedSquaresRoutine();
                     break;
                 case 6:
                     Console.WriteLine($"Now going to {AlgorithemOptions.TrounamentWinner}.");

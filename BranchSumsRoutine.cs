@@ -29,8 +29,8 @@ namespace SeansAlgoExpertConsoleApp
                 Messages.BinaryTreeRightValue();
                 string right = Console.ReadLine();
 
-                object[] node = { id, value, left, right };
-                nodes.Add((BranchSumsAlgorithem.BinaryTree[])node);
+                //BranchSumsAlgorithem.BinaryTree[] node = { id, value, left, right };
+                //nodes.Add(node);
                 i++;
             }
 

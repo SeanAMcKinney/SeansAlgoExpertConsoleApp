@@ -22,7 +22,7 @@ namespace SeansAlgoExpertConsoleApp
             {
                 array[i] = Convert.ToInt32(Console.ReadLine());
             }
-            TwoNumberSum.FindTwoNumberSum(array, targetSum);
+            TwoNumberSumAlgorithem.FindTwoNumberSum(array, targetSum);
             Console.ReadLine();
         }
     }
