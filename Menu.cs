@@ -1,4 +1,6 @@
 ﻿
+using AlgoExpertAlgorithmsLibrary;
+
 namespace SeansAlgoExpertConsoleApp
 {
     public static class Menu
@@ -49,6 +51,9 @@ namespace SeansAlgoExpertConsoleApp
 
                 case 8:
                     Console.WriteLine($"Now going to {AlgorithemOptions.ValidateSubsequence}.");
+                    Thread.Sleep(2000);
+                    Console.Clear();
+                    ValidateSubsequenceRoutine.RunValidateSubsequenceRoutine();
                     break;
                 default:
                     Console.WriteLine("Not a valid selection. Please try again.");

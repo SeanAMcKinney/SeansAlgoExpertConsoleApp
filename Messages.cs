@@ -17,6 +17,12 @@ namespace SeansAlgoExpertConsoleApp
 
 
         // Messages that ask you to do something. TODO: Construct an interface
+
+        public static void EnterYourSequenceArray()
+        {
+            Console.WriteLine($"Now enter your sequence array.\n");
+        }
+
         public static void EnterYourDataMessage()
         {
             Console.WriteLine($"Please enter your data: \n");
@@ -70,6 +76,20 @@ namespace SeansAlgoExpertConsoleApp
         }
 
         //Algorithem Direction Messages:  TODO: Construct Interface for directions
+
+        public static void ValidateSubsequenceInfo()
+        {
+            Console.WriteLine($"Welcome to the {AlgorithemOptions.ValidateSubsequence} algorithem.\n" +
+                $"The purpose of this algorithem is to take in TWO non-empty arrays of integers and\n" +
+                $"return a true or false answer on the question, \"is the second array a subsequence\n" +
+                $"of the first array?\".\n" +
+                $"You will be prompted for the number of integers in your array.\n" +
+                $"Next you will enter each integer in the array one at a time.\n" +
+                $"You will then do this process again for the second array.\n" +
+                $"Then the routine will return to you a true or false on the question of the second\n" +
+                $"array being a subsequence of the first.\n");
+        }
+
         public static void SortedSquaresInfo()
         {
             Console.WriteLine($"Welcome to the {AlgorithemOptions.SortedSquaredArray} algorithem.\n\n" +
