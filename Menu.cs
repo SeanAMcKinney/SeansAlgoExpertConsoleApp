@@ -12,45 +12,48 @@ namespace SeansAlgoExpertConsoleApp
             switch (userInput)
             {
                 case 0:
-                    Console.WriteLine($"Now going to {AlgorithemOptions.BinarySearch}.");
+                    Console.WriteLine($"Now going to {AlgorithmOptions.BinarySearch}.");
                     break;
                 case 1:
-                    Console.WriteLine($"Now going to {AlgorithemOptions.BranchSums}.");
+                    Console.WriteLine($"Now going to {AlgorithmOptions.BranchSums}.");
                     Thread.Sleep(2000);
                     Console.Clear();
                     BranchSumsRoutine.RunBranchSumsRoutine();
                     break;
                 case 2:
-                    Console.WriteLine($"Now going to {AlgorithemOptions.NodeDepths}.");
+                    Console.WriteLine($"Now going to {AlgorithmOptions.NodeDepths}.");
                     break;
                 case 3:
-                    Console.WriteLine($"Now going to {AlgorithemOptions.NonConstructibleChange}.");
+                    Console.WriteLine($"Now going to {AlgorithmOptions.NonConstructibleChange}.");
                     Thread.Sleep(2000);
                     Console.Clear();
                     NonConstructableChangeRoutine.RunNonConstructableChangeRoutine();
                     break;
 
                 case 4:
-                    Console.WriteLine($"Now going to {AlgorithemOptions.ProductSum}.");
+                    Console.WriteLine($"Now going to {AlgorithmOptions.ProductSum}.");
                     break;
                 case 5:
-                    Console.WriteLine($"Now going to {AlgorithemOptions.SortedSquaredArray}.");
+                    Console.WriteLine($"Now going to {AlgorithmOptions.SortedSquaredArray}.");
                     Thread.Sleep(2000);
                     Console.Clear();
                     SortedSquaresRoutine.RunSortedSquaresRoutine();
                     break;
                 case 6:
-                    Console.WriteLine($"Now going to {AlgorithemOptions.TrounamentWinner}.");
+                    Console.WriteLine($"Now going to {AlgorithmOptions.TournamentWinner}.");
+                    Thread.Sleep(2000);
+                    Console.Clear();
+                    TournamentWinnerRoutine.RunTournamentWinnerRoutine();
                     break;
                 case 7:
-                    Console.WriteLine($"Now going to {AlgorithemOptions.TwoNumberSumFromArray}.");
+                    Console.WriteLine($"Now going to {AlgorithmOptions.TwoNumberSumFromArray}.");
                     Thread.Sleep(2000);
                     Console.Clear();
                     TwoNumbersSumFromArrayRoutine.RunTwoNumberSumFromArrayRoutine();
                     break;
 
                 case 8:
-                    Console.WriteLine($"Now going to {AlgorithemOptions.ValidateSubsequence}.");
+                    Console.WriteLine($"Now going to {AlgorithmOptions.ValidateSubsequence}.");
                     Thread.Sleep(2000);
                     Console.Clear();
                     ValidateSubsequenceRoutine.RunValidateSubsequenceRoutine();

@@ -15,7 +15,7 @@ namespace SeansAlgoExpertConsoleApp
             {
                 coins[i] = Convert.ToInt32(Console.ReadLine());
             }
-            NonConstructibleChangeAlgorithem.NonConstructibleChange(coins);
+            NonConstructibleChangeAlgorithm.NonConstructibleChange(coins);
             Console.ReadLine();
         }
     }

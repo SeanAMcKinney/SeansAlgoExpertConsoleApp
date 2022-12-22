@@ -15,7 +15,7 @@ namespace SeansAlgoExpertConsoleApp
             {
                 array[i] = Convert.ToInt32(Console.ReadLine());
             }
-            SortedSquaredArrayAlgorithem.SortedSquaredArray(array);
+            SortedSquaredArrayAlgorithm.SortedSquaredArray(array);
             Console.ReadLine();
         }
     }

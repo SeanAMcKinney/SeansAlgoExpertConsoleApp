@@ -16,7 +16,7 @@ namespace SeansAlgoExpertConsoleApp
             Messages.BranchSumsInfo();
             Messages.HowManyNodesInYourBinaryTree();
             int numberOfNodes = Convert.ToInt32(Console.ReadLine());
-            List<BranchSumsAlgorithem.BinaryTree[]> nodes = new List<BranchSumsAlgorithem.BinaryTree[]>();
+            List<BranchSumsAlgorithm.BinaryTree[]> nodes = new List<BranchSumsAlgorithm.BinaryTree[]>();
 
             for (int i = 0; i < numberOfNodes; i++)
             {

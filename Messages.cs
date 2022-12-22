@@ -5,10 +5,10 @@ namespace SeansAlgoExpertConsoleApp
     {
         public static void OpeningMessage()
         {
-            Console.WriteLine($"Welcome to Sean's Algorithem Utility!\n\n" +
-                    $"Which algorithem would you like to use?\n");
+            Console.WriteLine($"Welcome to Sean's Algorithm Utility!\n\n" +
+                    $"Which Algorithm would you like to use?\n");
             int selection = 0;
-            foreach (string option in Enum.GetNames(typeof(AlgorithemOptions)))
+            foreach (string option in Enum.GetNames(typeof(AlgorithmOptions)))
             {
                 Console.WriteLine($"Choose {selection++} for {option}.");
             }
@@ -17,6 +17,11 @@ namespace SeansAlgoExpertConsoleApp
 
 
         // Messages that ask you to do something. TODO: Construct an interface
+
+        public static void EnterMatches()
+        {
+            Console.WriteLine($"Now enter your matches.\n");
+        }
 
         public static void EnterYourSequenceArray()
         {
@@ -59,6 +64,32 @@ namespace SeansAlgoExpertConsoleApp
 
         //Messages asking about how many **** you need. TODO: Construct interface
 
+        public static void EnterHomeTeam()
+        {
+            Console.WriteLine($"Enter the home team:\n");
+        }
+        
+        public static void EnterAwayTeam()
+        {
+            Console.WriteLine($"Enter the away team:\n");
+        }
+
+        public static void WinnerOfMatch()
+        {
+            Console.WriteLine($"Who won?\n" +
+                $" Enter a 1 for the the home team and 0 for the away team.\n");
+        }
+
+        public static void TheNumberOfMatches()
+        {
+            Console.WriteLine($"The number of matches you will enter is: ");
+        }
+
+        public static void HowManyTeams()
+        {
+            Console.WriteLine($"How many teams will be participating?\n");
+        }
+
         public static void HowManyNodesInYourBinaryTree()
         {
             Console.WriteLine($"How many nodes are in your binary tree?\n");
@@ -75,12 +106,25 @@ namespace SeansAlgoExpertConsoleApp
             Console.WriteLine($"How many coins will you be entering?\n");
         }
 
-        //Algorithem Direction Messages:  TODO: Construct Interface for directions
+        //Algorithm Direction Messages:  TODO: Construct Interface for directions
+
+        public static void TournamentWinnerInfo()
+        {
+            Console.WriteLine($"Welcome to the {AlgorithmOptions.TournamentWinner} Algorithm.\n" +
+                $"The purpose of this Algorithm is to take in a list of matches between teams\n" +
+                $"and then a list of outcomes for those matches generating an overall winner.\n" +
+                $"You will be prompted for the number of teams playing. You will be told how many\n" +
+                $"matches that is and be prompted to enter each match. First the home team, then\n" +
+                $"the away team. Every team must play all teams.\n" +
+                $"Finally you will be asked for the outcomes of each match. A \"0\" means the away\n" +
+                $"team is the winner, a \"1\" means the home team won. Enter a 1 or 0 for each match.\n" +
+                $"There are NO ties. It will then display the winner.\n");
+        }
 
         public static void ValidateSubsequenceInfo()
         {
-            Console.WriteLine($"Welcome to the {AlgorithemOptions.ValidateSubsequence} algorithem.\n" +
-                $"The purpose of this algorithem is to take in TWO non-empty arrays of integers and\n" +
+            Console.WriteLine($"Welcome to the {AlgorithmOptions.ValidateSubsequence} Algorithm.\n" +
+                $"The purpose of this Algorithm is to take in TWO non-empty arrays of integers and\n" +
                 $"return a true or false answer on the question, \"is the second array a subsequence\n" +
                 $"of the first array?\".\n" +
                 $"You will be prompted for the number of integers in your array.\n" +
@@ -92,8 +136,8 @@ namespace SeansAlgoExpertConsoleApp
 
         public static void SortedSquaresInfo()
         {
-            Console.WriteLine($"Welcome to the {AlgorithemOptions.SortedSquaredArray} algorithem.\n\n" +
-                $"The purpose of this algorithem is to take in a non-empty array of integers and\n" +
+            Console.WriteLine($"Welcome to the {AlgorithmOptions.SortedSquaredArray} Algorithm.\n\n" +
+                $"The purpose of this Algorithm is to take in a non-empty array of integers and\n" +
                 $"return them in a new sorted array that displays the squares of the original array.\n" +
                 $"From lowest to highest.\n" +
                 $"You will be prompted for the number of integers in your array.\n" +
@@ -104,8 +148,8 @@ namespace SeansAlgoExpertConsoleApp
 
         public static void TwoNumberSumInfo()
         {
-            Console.WriteLine($"Welcome to the {AlgorithemOptions.TwoNumberSumFromArray} algorithem.\n\n" +
-                $"The purpose of this algorithem is to take a target integer and find out if\n" +
+            Console.WriteLine($"Welcome to the {AlgorithmOptions.TwoNumberSumFromArray} Algorithm.\n\n" +
+                $"The purpose of this Algorithm is to take a target integer and find out if\n" +
                 $"any of two integers entered by you into an array will add up to the target integer.\n" +
                 $"If so, retrun the equation to you. It will return all possible combinations of\n" +
                 $"two integers that sum up to your target integer\n" +
@@ -116,8 +160,8 @@ namespace SeansAlgoExpertConsoleApp
 
         public static void NonConstructableChangeInfo()
         {
-            Console.WriteLine($"Welcome to the {AlgorithemOptions.NonConstructibleChange} algorithem.\n\n" +
-                $"The purpose of this algorithem is to take a given an array of positive integers representing\n" +
+            Console.WriteLine($"Welcome to the {AlgorithmOptions.NonConstructibleChange} Algorithm.\n\n" +
+                $"The purpose of this Algorithm is to take a given an array of positive integers representing\n" +
                 $"the values of coins in your possession. The function will return the minimum sum of money that\n" +
                 $"you CANNOT create. Coins must be a positive integer and do not have to be unique.\n" +
                 $"Parameter Example: new int[] {{ 1, 4, 2, 7 }}\n\n" +
@@ -127,8 +171,8 @@ namespace SeansAlgoExpertConsoleApp
 
         public static void BranchSumsInfo()
         {
-            Console.WriteLine($"Welcome to the {AlgorithemOptions.BranchSums} algorithem.\n\n" +
-                $"The purpose of this algorithem is to take in a binary tree which houses a\n" +
+            Console.WriteLine($"Welcome to the {AlgorithmOptions.BranchSums} Algorithm.\n\n" +
+                $"The purpose of this Algorithm is to take in a binary tree which houses a\n" +
                 $"list of nodes. Each node must have an id which must be unique.\n" +
                 $"Each node must have a value.\n" +
                 $"Each  node must have aleft node and a right node that are integers or null.\n" +

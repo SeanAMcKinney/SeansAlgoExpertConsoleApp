@@ -28,7 +28,7 @@ namespace SeansAlgoExpertConsoleApp
                 int item = Convert.ToInt32(Console.ReadLine());
                 sequence.Add(item);
             }
-            ValidateSubsequenceAlgorithem.IsValidSubsequence(array, sequence);
+            ValidateSubsequenceAlgorithm.IsValidSubsequence(array, sequence);
             Console.ReadLine();
         }
     }

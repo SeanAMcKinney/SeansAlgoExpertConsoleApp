@@ -1,7 +1,7 @@
 ﻿
 namespace SeansAlgoExpertConsoleApp
 {
-    enum AlgorithemOptions
+    enum AlgorithmOptions
     {
         BinarySearch,
         BranchSums,
@@ -9,7 +9,7 @@ namespace SeansAlgoExpertConsoleApp
         NonConstructibleChange,
         ProductSum,
         SortedSquaredArray,
-        TrounamentWinner,
+        TournamentWinner,
         TwoNumberSumFromArray,
         ValidateSubsequence,
     }
