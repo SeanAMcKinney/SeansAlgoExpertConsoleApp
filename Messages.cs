@@ -113,9 +113,24 @@ namespace SeansAlgoExpertConsoleApp
 
         //Algorithm Direction Messages:  TODO: Construct Interface for directions
 
+        public static void ProcuctSumInfo()
+        {
+            Console.WriteLine($"Welcome to the {AlgorithmOptions.ProductSum} Algorithm.\n" +
+                $"The purpose is to take in any array or a nested (\"Special\" array\n" +
+                $"where the product sum of the array is the sum of its integers, where\n" +
+                $"\"special\" arrays inside it our summed themselves and multiplied by\n" +
+                $"their level of depth. For each [] inside of the initial array is a\n" +
+                $"level deeper, like Russian nesting dolls.\n" +
+                $"Example array: \n" +
+                $"1 level depth:  [ 1, 2, 3, 4 ]\n" +
+                $"2 level depth:  [ 1, 2,[ 3, 4, ] 5 ]\n" +
+                $"3 level depth:  [ 1, [2, 3, [ 4, 5, ] 6,] 7 ]\n" +
+                $"And so on.\n");
+        }
+
         public static void BinaySearchInfo()
         {
-            Console.WriteLine($"Welcom to the {AlgorithmOptions.BinarySearch} Algorithm.\n" +
+            Console.WriteLine($"Welcome to the {AlgorithmOptions.BinarySearch} Algorithm.\n" +
                 $"The purpose of this Algorithm is to take in an array of integers and\n" +
                 $"a target integer, then determine if the target is in the array.\n" +
                 $"Firt you will be propmted for the number of integers in you array.\n" +

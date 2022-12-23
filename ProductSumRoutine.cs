@@ -1,10 +1,18 @@
-﻿namespace SeansAlgoExpertConsoleApp
+﻿using AlgoExpertAlgorithmsLibrary;
+
+namespace SeansAlgoExpertConsoleApp
 {
-    internal class ProductSumRoutine
+    public class ProductSumRoutine
     {
-        internal static void RunProductSumRoutine()
+        public static void RunProductSumRoutine()
         {
-            throw new NotImplementedException();
+            Messages.ProcuctSumInfo();
+            Messages.EnterYourDataMessage();
+            List<object> array = new();
+            int input = Convert.ToInt32(Console.ReadLine());
+            array.Add(input!);
+            ProductSumAlgorithm.ProductSum(array);
+            Console.ReadLine();
         }
     }
 }
