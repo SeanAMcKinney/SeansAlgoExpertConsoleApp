@@ -18,6 +18,11 @@ namespace SeansAlgoExpertConsoleApp
 
         // Messages that ask you to do something. TODO: Construct an interface
 
+        public static void EnterTarget()
+        {
+            Console.WriteLine($"Please enter your target: \n");
+        }
+
         public static void EnterMatches()
         {
             Console.WriteLine($"Now enter your matches.\n");
@@ -107,6 +112,19 @@ namespace SeansAlgoExpertConsoleApp
         }
 
         //Algorithm Direction Messages:  TODO: Construct Interface for directions
+
+        public static void BinaySearchInfo()
+        {
+            Console.WriteLine($"Welcom to the {AlgorithmOptions.BinarySearch} Algorithm.\n" +
+                $"The purpose of this Algorithm is to take in an array of integers and\n" +
+                $"a target integer, then determine if the target is in the array.\n" +
+                $"Firt you will be propmted for the number of integers in you array.\n" +
+                $"Next you will enter the in the integers in your array.\n" +
+                $"Lastly you will enter in your target integer. You will then recieve\n" +
+                $"the index in the array of your target back giving you your targets\n" +
+                $"location. If your target is not in the array you will be informed.\n");
+        }
+
 
         public static void TournamentWinnerInfo()
         {

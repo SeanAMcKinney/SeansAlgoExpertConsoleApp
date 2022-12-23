@@ -13,6 +13,9 @@ namespace SeansAlgoExpertConsoleApp
             {
                 case 0:
                     Console.WriteLine($"Now going to {AlgorithmOptions.BinarySearch}.");
+                    Thread.Sleep(2000);
+                    Console.Clear();
+                    BinarySearchRoutine.RunBinarySearchRoutine();
                     break;
                 case 1:
                     Console.WriteLine($"Now going to {AlgorithmOptions.BranchSums}.");
@@ -32,6 +35,9 @@ namespace SeansAlgoExpertConsoleApp
 
                 case 4:
                     Console.WriteLine($"Now going to {AlgorithmOptions.ProductSum}.");
+                    Thread.Sleep(2000);
+                    Console.Clear();
+                    ProductSumRoutine.RunProductSumRoutine();
                     break;
                 case 5:
                     Console.WriteLine($"Now going to {AlgorithmOptions.SortedSquaredArray}.");
