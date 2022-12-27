@@ -1,5 +1,6 @@
 ﻿using AlgoExpertAlgorithmsLibrary;
 using System;
+using System.Security.Cryptography.X509Certificates;
 
 namespace SeansAlgoExpertConsoleApp
 {
@@ -28,7 +29,7 @@ namespace SeansAlgoExpertConsoleApp
                 int item = Convert.ToInt32(Console.ReadLine());
                 sequence.Add(item);
             }
-            ValidateSubsequenceAlgorithm.IsValidSubsequence(array, sequence);
+            ValidateSubsequenceAlgorithm.IsValidSubSequence(array, sequence);
             Console.ReadLine();
         }
     }
