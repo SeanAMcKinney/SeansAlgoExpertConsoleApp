@@ -30,6 +30,7 @@ namespace SeansAlgoExpertConsoleApp
                 sequence.Add(item);
             }
             ValidateSubsequenceAlgorithm.IsValidSubSequence(array, sequence);
+            
             Console.ReadLine();
         }
     }

@@ -1,11 +1,4 @@
 ﻿using AlgoExpertAlgorithmsLibrary;
-using Microsoft.VisualBasic;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Xml.Linq;
 
 namespace SeansAlgoExpertConsoleApp
 {
@@ -16,27 +9,34 @@ namespace SeansAlgoExpertConsoleApp
             Messages.BranchSumsInfo();
             Messages.HowManyNodesInYourBinaryTree();
             int numberOfNodes = Convert.ToInt32(Console.ReadLine());
-            List<BranchSumsAlgorithm.BinaryTree[]> nodes = new List<BranchSumsAlgorithm.BinaryTree[]>();
+            BranchSumsAlgorithm.BinaryTree[] nodes = new BranchSumsAlgorithm.BinaryTree[numberOfNodes].ToArray();
 
             for (int i = 0; i < numberOfNodes; i++)
             {
-                Messages.EnterNodeId();
-                string id = Console.ReadLine()!;
+                //Messages.EnterNodeId();
+                //string id = i.ToString();
+                
+                Messages.BinaryTreeLeftValue();
+                string? left = Console.ReadLine();
+                Messages.BinaryTreeRightValue();
+                string? right = Console.ReadLine();
                 Messages.EnterNodeValue();
                 int value = Convert.ToInt32(Console.ReadLine());
-                Messages.BinaryTreeLeftValue();
-                string left =  Console.ReadLine();
-                Messages.BinaryTreeRightValue();
-                string right = Console.ReadLine();
 
-                //BranchSumsAlgorithem.BinaryTree[] node = { id, value, left, right };
-                //nodes.Add(node);
+                object node = new {
+                    Left = left,
+                    Right = right,
+                    Value = value,
+                };
+
+                nodes[i] = node.ToString();
+
                 i++;
             }
 
             Messages.EnterYourRoot();
             var root = Console.ReadLine();
-            
+
 
 
         }
